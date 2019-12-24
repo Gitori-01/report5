@@ -5,7 +5,7 @@ plugins {
 group 'report5'
 version '1.0-SNAPSHOT'
 
-sourceCompatibility = 1.8
+sourceCompatibility = 10
 
 repositories {
     mavenCentral()
@@ -19,4 +19,10 @@ dependencies {
 test {
     useJUnitPlatform()
     testLogging.showStandardStreams = true
+}
+
+jar {
+    manifest {
+        attributes  "Main-Class": "jp.ac.uryukyu.ie.e195701.Main"
+    }
 }
