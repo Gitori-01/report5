@@ -1,5 +1,13 @@
 package jp.ac.uryukyu.ie.e195701;
 
+/**
+ * ヒーローと敵の親クラス。
+ * String name; //キャラクターの名前
+ *  int hitPoint; //キャラクターのHP
+ *  int attack; //キャラクターの攻撃力
+ *  boolean dead; //キャラクターの生死状態。true=死亡。
+ *  Created by gitori-01 on 2019/11/25.
+ */
 public class LivingThings {
     private String name;
     private int hitPoint;
@@ -27,22 +35,42 @@ public class LivingThings {
         return dead;
     }
 
+    /**
+     * deadのセッター
+     * @param dead
+     */
     public void setDead(boolean dead) {
         this.dead = dead;
     }
 
+    /**
+     * nameのゲッター
+     * @return String
+     */
     public String getName() {
         return name;
     }
 
+    /**
+     * attackのゲッター
+     * @return int
+     */
     public int getAttack() {
         return attack;
     }
 
+    /**
+     * hitPointのゲッター
+     * @return int
+     */
     public int getHitPoint() {
         return hitPoint;
     }
 
+    /**
+     * hitpointのセッター
+     * @param hitPoint
+     */
     public void setHitPoint(int hitPoint) {
         this.hitPoint = hitPoint;
     }
